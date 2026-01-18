@@ -1,85 +1,113 @@
-# NovaMarket - Plataforma E-commerce Full Stack
+# 🚀 NovaMarket - E-commerce Full Stack
 
-NovaMarket es una aplicación web de comercio electrónico moderna y completa, diseñada con una arquitectura desacoplada que utiliza Spring Boot para el backend y Angular para el frontend. La plataforma ofrece una experiencia de usuario fluida con una gestión de catálogo robusta, carrito de compras y un panel de administración integral.
+NovaMarket es una plataforma de comercio electrónico moderna y robusta, construida con una arquitectura profesional que separa el **Backend (Spring Boot)** del **Frontend (Angular)**. Ofrece una experiencia de usuario fluida, gestión de inventario en tiempo real y un panel administrativo completo.
 
-## Tecnologías Utilizadas
+---
 
-### Backend
-- Java 17
-- Spring Boot 3.x
-- Spring Data JPA
-- Hibernate
-- Maven
+## 🛠️ Tecnologías Principales
 
-### Frontend
-- Angular 18+
-- Angular Material (Componentes UI)
-- Lucide Angular (Iconografía)
-- Signals para gestión de estado
-- Animaciones avanzadas con Angular Animations
-- SCSS para estilos personalizados
+| Backend (API) | Frontend (Cliente) |
+| :--- | :--- |
+| **Java 17** & **Spring Boot 3** | **Angular 18+** |
+| **Spring Data JPA** & Hibernate | **Signals** (Gestión de estado) |
+| **Maven** (Gestión de dependencias) | **Angular Material** & **Lucide Icons** |
+| Base de Datos H2 (En memoria) | **SCSS** & Animations |
 
-## Estructura del Proyecto
+---
 
-El repositorio está organizado en dos directorios principales:
+## 📋 Requisitos Previos
 
-- /src: Contiene el código fuente del backend desarrollado en Spring Boot.
-- /frontend: Contiene la aplicación cliente desarrollada en Angular.
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+- **Java JDK 17** o superior.
+- **Node.js** (v18.x o superior) y **npm**.
+- **Maven 3.x**.
+- Un navegador web moderno (Chrome, Firefox, Edge).
 
-## Requisitos Previos
+---
 
-Para ejecutar este proyecto localmente, asegúrese de tener instalado:
-- Java Development Kit (JDK) 17 o superior.
-- Node.js (versión 18.x o superior) y npm.
-- Maven 3.x.
-- Un IDE como IntelliJ IDEA, VS Code o Eclipse.
+## 🚀 Guía de Inicio Rápido
 
-## Instrucciones de Configuración
+Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
-### 1. Clonar el repositorio
+### 1. Clonar el Proyecto
+```bash
 git clone https://github.com/SoyPhilips/e-commerce-java.git
 cd e-commerce-java
+```
 
-### 2. Configurar el Backend
-1. Navegue a la raíz del proyecto donde se encuentra el archivo pom.xml.
-2. Instale las dependencias y compile el proyecto:
+### 2. Iniciar el Backend (Servidor)
+El backend maneja la lógica de negocio y la base de datos.
+1. Abre una terminal en la raíz del proyecto.
+2. Ejecuta el comando para compilar e iniciar:
+   ```bash
    mvn clean install
-3. Inicie la aplicación Spring Boot:
    mvn spring-boot:run
-   
-El servidor backend estará disponible en http://localhost:8080.
+   ```
+3. **Verificación:** Abre [http://localhost:8080/api/productos](http://localhost:8080/api/productos) en tu navegador. Deberías ver un JSON con los productos.
 
-### 3. Configurar el Frontend
-1. Navegue al directorio del frontend:
+### 3. Iniciar el Frontend (Interfaz)
+El frontend es lo que el usuario final ve e interactúa.
+1. Abre una **nueva terminal** y navega a la carpeta frontend:
+   ```bash
    cd frontend
-2. Instale las dependencias de npm:
+   ```
+2. Instala las dependencias necesarias:
+   ```bash
    npm install
-3. Inicie el servidor de desarrollo de Angular:
+   ```
+3. Inicia la aplicación de desarrollo:
+   ```bash
    npm start
+   ```
+4. **¡Listo!** Abre [http://localhost:4200](http://localhost:4200) en tu navegador.
 
-La aplicación frontend estará disponible en http://localhost:4200.
+---
 
-## Características Principales
+## 🔐 Acceso de Administrador
 
-### Para Usuarios
-- Exploración de catálogo con filtrado por categorías.
-- Vista detallada de productos con selección de cantidad.
-- Sistema de carrito de compras persistente.
-- Lista de deseos (Wishlist) integrada.
-- Proceso de checkout simplificado.
+Para probar las funciones de gestión de productos:
+- **URL:** [http://localhost:4200/login](http://localhost:4200/login)
+- **Email:** `admin@novamarket.com`
+- **Contraseña:** `admin123`
 
-### Para Administradores
-- Dashboard con estadísticas de inventario.
-- Gestión completa de productos (Crear, Leer, Actualizar, Eliminar).
-- Control de stock con indicadores visuales.
-- Interfaz de administración protegida.
+---
 
-## Credenciales de Acceso (Modo Desarrollo)
+## ✨ Características Destacadas
 
-Para acceder al panel de administración durante las pruebas:
-- Email: admin@novamarket.com
-- Contraseña: admin123
+### 🛒 Experiencia de Compra
+- **Catálogo Dinámico:** Filtrado instantáneo por categorías.
+- **Detalle de Producto:** Vista completa con control de stock.
+- **Carrito de Compras:** Persistencia local y animaciones fluidas.
+- **Wishlist:** Guarda tus productos favoritos.
 
-## Licencia
+### ⚙️ Panel de Administración
+- **Dashboard:** Estadísticas rápidas del inventario.
+- **Gestión CRUD:** Crea, edita y elimina productos fácilmente.
+- **Control de Stock:** Indicadores visuales de bajo inventario.
 
-Este proyecto fue desarrollado con fines educativos y de demostración.
+---
+
+## 📁 Estructura del Directorio
+
+```text
+e-commerce-java/
+├── src/                # Código fuente del Backend (Java/Spring Boot)
+│   ├── main/java/      # Controladores, Modelos y Servicios
+│   └── main/resources/ # Configuración y datos iniciales
+├── frontend/           # Código fuente del Frontend (Angular)
+│   ├── src/app/        # Componentes y lógica del cliente
+│   └── src/assets/     # Imágenes y estilos globales
+└── pom.xml             # Configuración de Maven
+```
+
+---
+
+## 🔧 Solución de Problemas Comunes
+
+- **Error de Puerto 8080:** Asegúrate de que no tengas otra aplicación usando el puerto 8080.
+- **Error en `npm install`:** Si falla, intenta borrar la carpeta `node_modules` y ejecutar `npm install --force`.
+- **Backend no conecta:** Verifica que Java 17 esté correctamente configurado en tus variables de entorno.
+
+---
+
+⭐ *Si este proyecto te resultó útil, ¡no olvides darle una estrella en GitHub!*
