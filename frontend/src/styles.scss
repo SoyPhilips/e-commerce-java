@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+html, body { height: 100%; margin: 0; }
+body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Material Button Customizations to match NovaMarket */
+.mat-mdc-button, .mat-mdc-raised-button {
+  border-radius: 12px !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+  letter-spacing: normal !important;
+}
