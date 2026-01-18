@@ -1,10 +1,10 @@
-# 🚀 NovaMarket - E-commerce Full Stack
+# NovaMarket - E-commerce Full Stack
 
 NovaMarket es una plataforma de comercio electrónico moderna y robusta, construida con una arquitectura profesional que separa el **Backend (Spring Boot)** del **Frontend (Angular)**. Ofrece una experiencia de usuario fluida, gestión de inventario en tiempo real y un panel administrativo completo.
 
 ---
 
-## 🛠️ Tecnologías Principales
+## Tecnologías Principales
 
 | Backend (API) | Frontend (Cliente) |
 | :--- | :--- |
@@ -15,7 +15,7 @@ NovaMarket es una plataforma de comercio electrónico moderna y robusta, constru
 
 ---
 
-## 📋 Requisitos Previos
+## Requisitos Previos
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 - **Java JDK 17** o superior.
@@ -25,7 +25,7 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 ---
 
-## 🚀 Guía de Inicio Rápido
+## Guía de Inicio Rápido
 
 Sigue estos pasos para ejecutar el proyecto en tu máquina local:
 
@@ -59,11 +59,11 @@ El frontend es lo que el usuario final ve e interactúa.
    ```bash
    npm start
    ```
-4. **¡Listo!** Abre [http://localhost:4200](http://localhost:4200) en tu navegador.
+4. Abre [http://localhost:4200](http://localhost:4200) en tu navegador.
 
 ---
 
-## 🔐 Acceso de Administrador
+## Acceso de Administrador
 
 Para probar las funciones de gestión de productos:
 - **URL:** [http://localhost:4200/login](http://localhost:4200/login)
@@ -72,22 +72,22 @@ Para probar las funciones de gestión de productos:
 
 ---
 
-## ✨ Características Destacadas
+## Características Destacadas
 
-### 🛒 Experiencia de Compra
+### Experiencia de Compra
 - **Catálogo Dinámico:** Filtrado instantáneo por categorías.
 - **Detalle de Producto:** Vista completa con control de stock.
 - **Carrito de Compras:** Persistencia local y animaciones fluidas.
 - **Wishlist:** Guarda tus productos favoritos.
 
-### ⚙️ Panel de Administración
+### Panel de Administración
 - **Dashboard:** Estadísticas rápidas del inventario.
 - **Gestión CRUD:** Crea, edita y elimina productos fácilmente.
 - **Control de Stock:** Indicadores visuales de bajo inventario.
 
 ---
 
-## 📁 Estructura del Directorio
+## Estructura del Directorio
 
 ```text
 e-commerce-java/
@@ -102,7 +102,7 @@ e-commerce-java/
 
 ---
 
-## 🔧 Solución de Problemas Comunes
+## Solución de Problemas Comunes
 
 - **Error de Puerto 8080:** Asegúrate de que no tengas otra aplicación usando el puerto 8080.
 - **Error en `npm install`:** Si falla, intenta borrar la carpeta `node_modules` y ejecutar `npm install --force`.
@@ -110,4 +110,4 @@ e-commerce-java/
 
 ---
 
-⭐ *Si este proyecto te resultó útil, ¡no olvides darle una estrella en GitHub!*
+*Si este proyecto te resultó útil, puedes darle una estrella en GitHub.*
